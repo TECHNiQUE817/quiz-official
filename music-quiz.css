@@ -1,0 +1,361 @@
+* {
+  margin: 0;
+  padding: 0; 
+  font-family:'gochi hand';
+  box-sizing: border-box;
+}
+
+.container { 
+  width: 500px;
+  height: auto;
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.middle-container {
+  position: relative;
+}
+
+.circle-one {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 3px black;
+  background: none;
+  position: absolute;
+  margin-top: -300px;
+  margin-right: 390px;
+  z-index: 3;
+}
+
+.circle-two {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 3px black;
+  background: none;
+  position: absolute;
+  margin-top: 60px;
+  margin-right: 390px;
+}
+
+.circle-three {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 3px black;
+  background: none;
+  position: absolute;
+  margin-top: 400px;
+  margin-right: 390px;
+}
+
+.header {
+  position: absolute;
+  margin-top: -95px;
+  margin-left: 90px;
+  padding: 10px;
+}
+
+.vertical {
+  height: 600px;
+  background: red;
+  width: 8px;
+  border: solid red 0px;
+  margin-right: 290px;
+}
+
+.horizontal {
+  height: 500px;
+  background: rgb(153, 153, 233);
+  width: 4px;
+  border: solid rgb(153, 153, 233) 0px;
+  position: absolute;
+  rotate: 90deg;
+  margin-top: -380px;
+}
+
+.horizontal-one {
+  height: 500px;
+  background: rgb(153, 153, 233);
+  width: 4px;
+  border: solid rgb(153, 153, 233) 0px;
+  position: absolute;
+  rotate: 90deg;
+  margin-top: -320px;
+}
+
+.horizontal-two {
+  height: 500px;
+  background: rgb(153, 153, 233);
+  width: 4px;
+  border: solid rgb(153, 153, 233) 0px;
+  position: absolute;
+  rotate: 90deg;
+  margin-top: -250px;
+}
+
+.horizontal-three {
+  height: 500px;
+  background: rgb(153, 153, 233);
+  width: 4px;
+  border: solid rgb(153, 153, 233) 0px;
+  position: absolute;
+  rotate: 90deg;
+  margin-top: -180px;
+}
+
+.horizontal-four {
+  height: 500px;
+  background: rgb(153, 153, 233);
+  width: 4px;
+  border: solid rgb(153, 153, 233) 0px;
+  position: absolute;
+  rotate: 90deg;
+  margin-top: -110px;
+}
+
+.horizontal-five {
+  height: 500px;
+  background: rgb(153, 153, 233);
+  width: 4px;
+  border: solid rgb(153, 153, 233) 0px;
+  position: absolute;
+  rotate: 90deg;
+  margin-top: -40px;
+}
+
+.horizontal-six {
+  height: 500px;
+  background: rgb(153, 153, 233);
+  width: 4px;
+  border: solid rgb(153, 153, 233) 0px;
+  position: absolute;
+  rotate: 90deg;
+  margin-top: 30px;
+}
+
+.horizontal-seven {
+  height: 500px;
+  background: rgb(153, 153, 233);
+  width: 4px;
+  border: solid rgb(153, 153, 233) 0px;
+  position: absolute;
+  rotate: 90deg;
+  margin-top: 100px;
+}
+
+.horizontal-eight {
+  height: 500px;
+  background: rgb(153, 153, 233);
+  width: 4px;
+  border: solid rgb(153, 153, 233) 0px;
+  position: absolute;
+  rotate: 90deg;
+  margin-top: 170px;
+}
+
+.horizontal-nine {
+  height: 500px;
+  background: rgb(153, 153, 233);
+  width: 4px;
+  border: solid rgb(153, 153, 233) 0px;
+  position: absolute;
+  rotate: 90deg;
+  margin-top: 240px;
+}
+
+.horizontal-ten {
+  height: 500px;
+  background: rgb(153, 153, 233);
+  width: 4px;
+  border: solid rgb(153, 153, 233) 0px;
+  position: absolute;
+  rotate: 90deg;
+  margin-top: 310px;
+}
+
+.horizontal-eleven {
+  height: 500px;
+  background: rgb(153, 153, 233);
+  width: 4px;
+  border: solid rgb(153, 153, 233) 0px;
+  position: absolute;
+  rotate: 90deg;
+  margin-top: 380px;
+}
+
+.horizontal-twelve {
+  height: 500px;
+  background: rgb(153, 153, 233);
+  width: 4px;
+  border: solid rgb(153, 153, 233) 0px;
+  position: absolute;
+  rotate: 90deg;
+  margin-top: 450px;
+}
+
+.horizontal-thirteen {
+  height: 500px;
+  background: rgb(153, 153, 233);
+  width: 4px;
+  border: solid rgb(153, 153, 233) 0px;
+  position: absolute;
+  rotate: 90deg;
+  margin-top: 520px;
+}
+
+form {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+h1 {
+  position: absolute;
+  margin-top: -50px;
+  font-size: 45px;
+  z-index: 1;
+  margin-left: 170px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+.input {
+  justify-content: center;
+  text-align: center;
+}
+
+.top {
+  margin-top: 20px;
+}
+
+.field {
+  background: transparent;
+  border: solid 2px red;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  outline: none;
+  text-align: center;
+  width: 175px;
+}
+
+
+.button {
+  outline: none;
+  border: 0;
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  border: solid 1px red;
+}
+
+
+
+/**********************mobile device styling*******************/ 
+
+
+@media (min-width: 375px) and (max-width: 812px) {
+  .header {
+  position: absolute;
+  margin-top: -133px;
+  margin-left: 110px;
+}
+
+h1 {
+  position: absolute;
+  margin-top: -50px;
+  font-size: 45px;
+  z-index: 1;
+  margin-left: 170px;
+}
+
+.container { 
+  width: 500px;
+  height: 700px;
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 230px;
+  font-size: 17px;
+}
+
+.vertical {
+  height: 700px;
+  background: red;
+  width: 8px;
+  border: solid red 0px;
+  margin-right: 300px;
+}
+
+form {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin-top: 205px;
+  width: 500px;
+}
+
+}
+
+
+
+@media (min-width: 813px) and (max-width: 997px) {
+  .header {
+    position: absolute;
+    margin-top: -133px;
+    margin-left: 110px;
+  }
+
+  h1 {
+    position: absolute;
+    margin-top: -50px;
+    font-size: 45px;
+    z-index: 1;
+    margin-left: 170px;
+  }
+.container { 
+  width: 500px;
+  height: 700px;
+  background: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 230px;
+  font-size: 17px;
+}
+
+.vertical {
+  height: 700px;
+  background: red;
+  width: 8px;
+  border: solid red 0px;
+  margin-right: 300px;
+}
+
+form {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin-top: 205px;
+  width: 500px;
+}
+
+}
+
+
+
+

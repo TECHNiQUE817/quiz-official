@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <link rel="stylesheet" href="music-quiz.css">
+        <title>Pop Quiz</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Gochi+Hand&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Questrial&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+      <div class="container">
+         
+        <hr class="vertical">
+        <hr class="horizontal">
+        <hr class="horizontal-one">
+        <hr class="horizontal-two">
+        <hr class="horizontal-three">
+        <hr class="horizontal-four">
+        <hr class="horizontal-five">
+        <hr class="horizontal-six">
+        <hr class="horizontal-seven">
+        <hr class="horizontal-eight">
+        <hr class="horizontal-nine">
+        <hr class="horizontal-ten">
+        <hr class="horizontal-eleven">
+        <hr class="horizontal-twelve">
+        <hr class="horizontal-thirteen">
+        <hr class="horizontal-fourteen">
+
+        <div class="circle-one"></div>
+        <div class="circle-two"></div>
+        <div class="circle-three"></div>
+
+      <form name="submit-to-google-sheet">
+
+        <div class="header">
+          <label for="name">Name:</label>
+          <input type="text" name="Name" for="name" required class="field">
+  <br>
+          <label>Date:</label>
+          <input type="date" name="Date" required class="field">
+        </div>
+
+        <!--the above code is the layout paper-->
+
+<div class="middle-container">   
+  <h1>Pop Quiz</h1>      
+
+          <div class="input top">
+            <h2> 1. What is your main music app?</h2>
+            <label for="music">Apple Music</label>
+            <input type="radio" name="App" value="Apple">
+<br>
+            <label for="music">Spotify</label>
+            <input type="radio" name="App" value="Spotify">
+<br>
+            <label for="music">Sound Cloud</label>
+            <input type="radio" name="App" value="Sound">
+<br>
+            <label for="music">Other</label>
+            <input type="radio" name="App" value="">
+            <input type="text" name="App"  class="field">
+          </div>
+<br>
+         <div class="input">
+          <h2> 2. What was your favorite subject in school?</h2>
+          <input type="text" name="Subject" required class="field">
+         </div>
+<br>
+         <div class="input">
+          <h2> 3. Which do you prefer?</h2>
+          <label for="prefer" name="Preference">Unsigned Artist</label>
+          <input type="radio" name="Preference">
+
+          <label for="prefer" name="Preference">Main Stream Artist</label>
+          <input type="radio" name="Preference">
+         </div>
+<br>
+         <div class="input">
+          <h2> 4. What is your favorite music genre?</h2>
+          <input type="text" name="Genre" required class="field">
+         </div>
+<br>
+         <div class="input">
+          <h2> 5. What is your 'forever song'?</h2>
+          <input type="text" name="Forever Song" required class="field">
+         </div>
+         <div class="input">
+          <h2>BONUS: <br> How many songs are in your music library?</h2>
+          <input type="text" name="Bonus" required class="field">
+         </div>
+
+         <div class="input bonus">
+          <button type="submit" class="input button">Submit</button>
+         </div>
+</div>
+         <!--<p>This quiz does not count towards your grade. <br> However, the data submitted will be analyzed for my next project.</p>-->
+
+        </form>
+      </div>
+
+
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwS8MZhkQk3tmDtqpe7fk1Q5eWFV1cR21SbHIXZH1X4l8_isS5hiViE8M7BCxiJeblhNA/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    </body>    
+</html>
